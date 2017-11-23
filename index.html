@@ -6,7 +6,9 @@
     <script type="module">
 
       import Foo from './helper.js';
-      console.log(Foo);
+      import { subModule } from './Sub/index.js';
+      subModule();
+      console.log('Foo is', Foo);
       Foo.someHelper();
 
     </script>
